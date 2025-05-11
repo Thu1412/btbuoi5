@@ -42,14 +42,14 @@ yarn-error.log
 
 # fastlane
 #
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
+# It is recommended to not store the Logichots in the git repo. Instead, use fastlane to re-generate the
+# Logichots whenever they are needed.
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
 
 **/fastlane/report.xml
 **/fastlane/Preview.html
-**/fastlane/screenshots
+**/fastlane/Logichots
 **/fastlane/test_output
 
 # Bundle artifact
