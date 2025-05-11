@@ -12,7 +12,8 @@ import CustomNavigationBar from './CustomNavigationBar';
 
 const Drawer = createDrawerNavigator();
 
-const MyDrawer = () => {
+const MyDrawer = ({ route }) => {
+  const email = route?.params?.email || 'Admin';
   return (
     <Drawer.Navigator
       drawerContent={(props) => <CustomDrawerBar {...props} />}
@@ -20,7 +21,7 @@ const MyDrawer = () => {
         header: (props) => <CustomNavigationBar {...props} />,
       }}
     >
-      <Drawer.Screen name="Home" component={Home} />
+      <Drawer.Screen name="Home" component={Home} initialParams={{ email }} />
       <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="Setting" component={Setting} />
       <Drawer.Screen name="Details" component={Details} />

@@ -6,6 +6,7 @@ import Taotaikhoan from './Taotaikhoan';
 import Laylaimatkhau from './Laylaimatkhau';
 import MyDrawer from './MyDrawer'; 
 import Hometodo from '../Todo/Hometodo';
+import Home from './Home'; 
 const Stack = createNativeStackNavigator();
 
 const AuthStack = () => (

@@ -28,10 +28,8 @@ const firebaseConfig = {
   appId: '1:134907397406:web:be39a6a2c15737de28f50f',
 };
 
-// Khởi tạo ứng dụng Firebase
 const app = initializeApp(firebaseConfig);
 
-// Khởi tạo Firebase Auth với persistence sử dụng AsyncStorage
 const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(ReactNativeAsyncStorage),
 });
